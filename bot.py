@@ -9,7 +9,7 @@ attack_in_progress = False
 current_attack = None  # Store details of the current attack
 attack_history = []  # Store attack logs
 
-TELEGRAM_BOT_TOKEN = '6834692290:AAEG9jSPAxgj9fMEUTRHHn8_-GtnLhitRLQ'  # Replace with your bot token
+TELEGRAM_BOT_TOKEN = '7110330439:AAGnXS6ZHG_SZ3_mfy2ycxMWRS3hT8uNsNQ'  # Replace with your bot token
 ADMIN_USER_ID = 5142603617
 MONGO_URI = "mongodb+srv://m92yt:Luffy123123@luffy2.n7zzkmo.mongodb.net/?retryWrites=true&w=majority&appName=LUFFY2"
 DB_NAME = "ninja"
@@ -192,7 +192,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./vpsbest {ip} {port} {duration} {1024} {1200}"
+        command = f"./vpsbest {ip} {port} {duration} {1024} {980}"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
